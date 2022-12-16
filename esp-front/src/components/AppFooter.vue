@@ -1,12 +1,16 @@
 <template>
   <div class="footer">
     <ul class="footer-list-options">
-      <li
-        v-for="options in footerListOptions"
-        :key="options"
-        class="list-options"
-      >
-        <a class="footer-options-links">{{ options }}</a>
+      <li class="list-options">
+        <router-link class="options-links" to="/copyright"
+          >Copyright</router-link
+        >
+        <router-link class="options-links" to="/termsOfUse">
+          Terms of Use
+        </router-link>
+        <router-link class="options-links" to="/PrivacyPolicy">
+          Privacy Policy
+        </router-link>
       </li>
     </ul>
   </div>
@@ -43,9 +47,10 @@ export default {
   list-style-type: none;
   display: flex;
 }
-.footer-options-links {
+a {
   color: white;
   margin: 10px;
+  text-decoration: none;
 }
 .footer-options-links:hover {
   background-color: #444;
