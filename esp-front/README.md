@@ -1,4 +1,4 @@
-# esp-app
+# esp-front
 
 ## Project setup
 ```
