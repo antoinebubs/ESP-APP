@@ -24,22 +24,22 @@
   </div>
   <router-view />
 </template>
-  
-  <script>
+
+<script>
 export default {
   data() {
     return {};
   },
 };
 </script>
-  
+
 <style scoped>
 .navbar {
   display: grid;
   grid-template-columns: auto auto;
   top: 0;
   width: 100%;
-  background-color: #333;
+  background-color: #f9f3ed;
 }
 .navbar-options-left {
   overflow: hidden;
@@ -52,9 +52,10 @@ export default {
 }
 
 a {
-  color: white;
+  color: #13294b;
   margin: 10px;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .list-options .options-links:hover {
@@ -68,5 +69,3 @@ a {
   margin: 10px;
 }
 </style>
-
-  

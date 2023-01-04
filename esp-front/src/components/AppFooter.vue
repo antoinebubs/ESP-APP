@@ -15,8 +15,8 @@
     </ul>
   </div>
 </template>
-  
-  <script>
+
+<script>
 export default {
   data() {
     return {
@@ -29,11 +29,11 @@ export default {
   },
 };
 </script>
-  
+
 <style scoped>
 .footer {
-  background-color: #333;
-  color: white;
+  background-color: #f9f3ed;
+  color: #13294b;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -48,9 +48,10 @@ export default {
   display: flex;
 }
 a {
-  color: white;
+  color: #13294b;
   margin: 10px;
   text-decoration: none;
+  font-size: 20px;
 }
 .footer-options-links:hover {
   background-color: #444;
