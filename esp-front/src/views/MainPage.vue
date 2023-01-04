@@ -2,9 +2,10 @@
   <div class="main-page">
     <div class="main-page-wapper">
       <h1>
-        Virtual Reality for Mental Health Professionals Amelia, an all-in-one VR
+        Virtual Reality for Mental Health Professionals EpiHealth, an all-in-one
+        VR
       </h1>
-      <h3>platform trusted by over 2000 therapists.</h3>
+      <h3>platform trusted by over 2 therapists.</h3>
       <div class="flex-container">
         <ButtonMain>Démo</ButtonMain>
         <ButtonMain>Pricing</ButtonMain>
