@@ -1,10 +1,36 @@
 <template>
-  <div class="News">NEWS</div>
+  <div class="news">
+    <ul class="list-options">
+      <li v-for="info in infos" :key="info" class="list">
+        <AppCard />
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
+import AppCard from "@/components/AppCard.vue";
 export default {
   name: "NewsView",
-  components: {},
+  data() {
+    return {
+      infos: 6,
+    };
+  },
+  components: {
+    AppCard,
+  },
 };
 </script>
+<style scoped>
+.news {
+  display: flex;
+}
+.list-options {
+  display: flex;
+  list-style-type: none;
+}
+.list {
+  margin: 20px;
+}
+</style>

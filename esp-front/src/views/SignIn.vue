@@ -1,36 +1,50 @@
 <template>
-  <div>
-    <h1>Register</h1>
-    <form @submit="handleRegister">
-      <label for="email">Email:</label>
-      <input type="email" id="email" v-model="email" />
-      <label for="password">Password:</label>
-      <input type="password" id="password" v-model="password" />
-      <button type="submit">Sign In</button>
+  <div class="register flex-container">
+    <h1>Sign In</h1>
+    <form @submit="signIn" class="form">
+      <label class="label" for="username">Username:</label>
+      <input class="input" type="text" id="username" v-model="username" />
+      <label class="label" for="password">Password:</label>
+      <input class="input" type="password" id="password" v-model="password" />
+      <div class="buttons">
+        <ButtonMain type="submit">Submit</ButtonMain>
+        <router-link to="/register"
+          ><ButtonMain type="submit"> Register</ButtonMain>
+        </router-link>
+      </div>
     </form>
   </div>
 </template>
-  
-  <script>
+
+<script>
+import ButtonMain from "@/components/ButtonMain.vue";
 export default {
   data() {
     return {
       username: "",
-      email: "",
       password: "",
     };
   },
+  components: {
+    ButtonMain,
+  },
   methods: {
-    handleRegister() {
+    signIn() {
       // validate the user's information
       // and handle the register process
     },
   },
 };
 </script>
-  
-  <style scoped>
-form {
+
+<style scoped>
+.register {
+  display: block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  height: 850px;
+}
+.form {
   width: 500px;
   margin: auto;
   padding: 20px;
@@ -38,23 +52,22 @@ form {
   border-radius: 25px;
   margin-bottom: 30px;
 }
-label {
+.label {
   display: block;
   margin-bottom: 10px;
 }
-input {
+.input {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   box-sizing: border-box;
   border-radius: 25px;
 }
-button {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+a:hover {
 }
 </style>
-  

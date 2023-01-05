@@ -34,7 +34,7 @@ export default {
 <style scoped>
 .main-page {
   font-family: Ubuntu, Noto Sans SC, helvetica, arial, sans-serif;
-  background-image: url("../img/headset.jpg");
+  background-image: url("@/img/headset.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;

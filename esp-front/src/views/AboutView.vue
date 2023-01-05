@@ -20,7 +20,7 @@
           evidence-based care for better mental-health practices, globally.
         </p>
       </div>
-      <img src="../img/background.jpg" width="950" height="600" />
+      <img src="@/img/background.jpg" width="950" height="600" />
     </div>
   </div>
 </template>
@@ -34,7 +34,7 @@ export default {
 </script>
 <style scoped>
 .about {
-  font-family: Poppins, sans-serif;
+  font-family: Ubuntu, Noto Sans SC, helvetica, arial, sans-serif;
   color: #13294b;
   display: flex;
   flex-direction: column;
@@ -56,14 +56,13 @@ export default {
   border-radius: 35px;
   border: none 2px #13294b;
   margin: 10px 10px 10px 10px;
-  box-shadow: 3px 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 img {
   border-radius: 35px;
 }
 h1 {
   text-align: left;
-  font-family: Ubuntu, Noto Sans SC, helvetica, arial, sans-serif;
   font-size: 45px;
   line-height: 1.2;
   font-weight: 400;
