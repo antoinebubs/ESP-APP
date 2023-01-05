@@ -20,6 +20,7 @@
           evidence-based care for better mental-health practices, globally.
         </p>
       </div>
+      <img src="../img/background.jpg" width="950" height="600" />
     </div>
   </div>
 </template>
@@ -55,10 +56,10 @@ export default {
   border-radius: 35px;
   border: none 2px #13294b;
   margin: 10px 10px 10px 10px;
+  box-shadow: 3px 3px;
 }
 img {
-  border-top-right-radius: 35px;
-  border-bottom-right-radius: 35px;
+  border-radius: 35px;
 }
 h1 {
   text-align: left;
@@ -69,6 +70,6 @@ h1 {
   width: 50%;
   background-color: #f9f3ed;
   border-radius: 15px;
-  padding: 20px;
+  padding: 40px;
 }
 </style>

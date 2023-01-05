@@ -19,14 +19,16 @@ export default {
   background-color: #008cba;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 20px 32px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   margin: 10px 20px;
   cursor: pointer;
   border-radius: 15px;
   box-shadow: black 5px 5px;
+  font-weight: bold;
+}
+.button:hover {
+  color: #333;
 }
 </style>

@@ -1,11 +1,12 @@
 <template>
+  <div class="meganavbar"></div>
   <div class="navbar">
     <div class="navbar-options-left">
       <ul class="list-options">
         <li class="list">
-          <router-link to="/home">Home</router-link>
-          <router-link to="/news">News</router-link>
-          <router-link to="/about">About</router-link>
+          <router-link class="options-links" to="/home">Home</router-link>
+          <router-link class="options-links" to="/news">News</router-link>
+          <router-link class="options-links" to="/about">About</router-link>
         </li>
       </ul>
     </div>
@@ -35,33 +36,32 @@ export default {
 
 <style scoped>
 .navbar {
-  display: grid;
-  grid-template-columns: auto auto;
-  top: 0;
-  width: 100%;
   background-color: #008cba;
   border-bottom-right-radius: 35px;
   border-bottom-left-radius: 35px;
+  background-color: #008cba;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .navbar-options-left {
-  overflow: hidden;
   list-style-type: none;
 }
 
 .list-options {
   list-style-type: none;
-  display: flex;
 }
 
 a {
-  color: #13294b;
+  color: #f9f3ed;
   margin: 10px;
   text-decoration: none;
   font-size: 20px;
+  font-weight: bold;
 }
 
-.list-options .options-links:hover {
-  background-color: #333;
+.list-options a:hover {
+  color: #333;
 }
 .navbar-options-right .list-options {
   display: flex;

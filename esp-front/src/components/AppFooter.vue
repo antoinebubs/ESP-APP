@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
-    <ul class="footer-list-options">
-      <li class="list-options">
+    <ul class="list-options">
+      <li class="list">
         <router-link class="options-links" to="/copyright"
           >Copyright</router-link
         >
@@ -33,27 +33,24 @@ export default {
 <style scoped>
 .footer {
   background-color: #008cba;
-  color: #13294b;
+  border-top-right-radius: 35px;
+  border-top-left-radius: 35px;
+  background-color: #008cba;
   display: flex;
   justify-content: center;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-.footer-list-options {
-  display: flex;
+  font-weight: bold;
 }
 .list-options {
   list-style-type: none;
-  display: flex;
 }
 a {
-  color: #13294b;
+  color: #f9f3ed;
   margin: 10px;
   text-decoration: none;
   font-size: 20px;
 }
-.footer-options-links:hover {
-  background-color: #444;
+.list-options a:hover {
+  color: #333;
 }
 </style>

@@ -5,7 +5,7 @@
         Virtual Reality for Mental Health Professionals EpiHealth, an all-in-one
         VR
       </h1>
-      <h3>platform trusted by over 2 therapists.</h3>
+      <h3>platform trusted by over 0 therapists.</h3>
       <div class="flex-container">
         <ButtonMain @click="doSomething">Démo</ButtonMain>
         <ButtonMain>Pricing</ButtonMain>
@@ -44,14 +44,23 @@ export default {
   width: 100%;
   height: 850px;
 }
-h1 {
-  text-align: center;
+p {
+  color: #f9f3ed;
 }
+
 h3 {
   text-align: left;
   margin: 20px;
 }
 .flex-container {
   display: flex;
+}
+.flex-container2 {
+  display: flex;
+  background-color: #008cba;
+  padding: 15px;
+  border-radius: 35px;
+  margin-top: 70px;
+  box-shadow: black 8px 8px;
 }
 </style>
