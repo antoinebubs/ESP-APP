@@ -32,7 +32,7 @@ export default {
 
 <style scoped>
 .footer {
-  background-color: #f9f3ed;
+  background-color: #008cba;
   color: #13294b;
   display: flex;
   justify-content: center;

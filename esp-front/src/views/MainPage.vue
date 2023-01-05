@@ -7,7 +7,7 @@
       </h1>
       <h3>platform trusted by over 2 therapists.</h3>
       <div class="flex-container">
-        <ButtonMain>Démo</ButtonMain>
+        <ButtonMain @click="doSomething">Démo</ButtonMain>
         <ButtonMain>Pricing</ButtonMain>
       </div>
     </div>
@@ -20,6 +20,11 @@ export default {
   data() {
     return {};
   },
+  methods: {
+    doSomething() {
+      alert("CLICKED");
+    },
+  },
   components: {
     ButtonMain,
   },
@@ -30,7 +35,7 @@ export default {
 .main-page {
   font-family: Ubuntu, Noto Sans SC, helvetica, arial, sans-serif;
   background-image: url("../img/headset.jpg");
-  background-size: 100% 100%;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: flex-start;

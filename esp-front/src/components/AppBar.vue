@@ -39,7 +39,9 @@ export default {
   grid-template-columns: auto auto;
   top: 0;
   width: 100%;
-  background-color: #f9f3ed;
+  background-color: #008cba;
+  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 35px;
 }
 .navbar-options-left {
   overflow: hidden;
