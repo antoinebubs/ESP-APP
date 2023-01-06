@@ -1,5 +1,4 @@
 <template>
-  <div class="meganavbar"></div>
   <div class="navbar">
     <div class="navbar-options-left">
       <ul class="list-options">
@@ -37,14 +36,12 @@ export default {
 <style scoped>
 .navbar {
   background-color: #008cba;
-  border-bottom-right-radius: 35px;
-  border-bottom-left-radius: 35px;
-  background-color: #008cba;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.navbar-options-left {
+.navbar-options-left .navbar-options-right {
+  display: flex;
   list-style-type: none;
 }
 
@@ -64,8 +61,6 @@ a {
   color: #333;
 }
 .navbar-options-right .list-options {
-  display: flex;
-  float: right;
 }
 .list {
   margin: 10px;

@@ -14,7 +14,7 @@ export default {
   name: "NewsView",
   data() {
     return {
-      infos: 6,
+      infos: 14,
     };
   },
   components: {
@@ -28,6 +28,8 @@ export default {
 }
 .list-options {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style-type: none;
 }
 .list {

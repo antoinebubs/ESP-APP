@@ -25,7 +25,7 @@ export default {
   margin: 10px 20px;
   cursor: pointer;
   border-radius: 15px;
-  box-shadow: black 5px 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   font-weight: bold;
 }
 .button:hover {

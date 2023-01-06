@@ -2,9 +2,9 @@
   <div class="footer">
     <ul class="list-options">
       <li class="list">
-        <router-link class="options-links" to="/copyright"
-          >Copyright</router-link
-        >
+        <router-link class="options-links" to="/copyright">
+          Copyright
+        </router-link>
         <router-link class="options-links" to="/termsOfUse">
           Terms of Use
         </router-link>
@@ -32,9 +32,6 @@ export default {
 
 <style scoped>
 .footer {
-  background-color: #008cba;
-  border-top-right-radius: 35px;
-  border-top-left-radius: 35px;
   background-color: #008cba;
   display: flex;
   justify-content: center;

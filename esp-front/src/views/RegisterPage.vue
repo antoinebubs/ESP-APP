@@ -1,5 +1,5 @@
 <template>
-  <div class="register flex-container">
+  <div class="register-main-container">
     <h1>Register</h1>
     <form @submit="handleRegister" class="form">
       <label class="label" for="username">Username:</label>
@@ -41,22 +41,22 @@ export default {
 </script>
 
 <style scoped>
-.register {
-  display: block;
+.register-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   height: 850px;
 }
 .form {
-  width: 500px;
-  margin: auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 25px;
   margin-bottom: 30px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 .label {
-  display: block;
   margin-bottom: 10px;
 }
 .input {

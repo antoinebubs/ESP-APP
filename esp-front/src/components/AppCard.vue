@@ -30,6 +30,8 @@ export default {
   font-family: arial;
   border: none 1px;
   border-radius: 35px;
+  max-width: 400px;
+  min-width: 200px;
 }
 
 .title {

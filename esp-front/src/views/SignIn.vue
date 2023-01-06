@@ -1,15 +1,15 @@
 <template>
-  <div class="register flex-container">
-    <h1>Sign In</h1>
-    <form @submit="signIn" class="form">
-      <label class="label" for="username">Username:</label>
-      <input class="input" type="text" id="username" v-model="username" />
+  <div class="signin-main-container">
+    <h1>Sign in</h1>
+    <form @submit="handleSignIn" class="form">
+      <label class="label" for="email">Email:</label>
+      <input class="input" type="email" id="email" v-model="email" />
       <label class="label" for="password">Password:</label>
       <input class="input" type="password" id="password" v-model="password" />
       <div class="buttons">
         <ButtonMain type="submit">Submit</ButtonMain>
-        <router-link to="/register"
-          ><ButtonMain type="submit"> Register</ButtonMain>
+        <router-link to="/signin"
+          ><ButtonMain type="submit"> Sign In</ButtonMain>
         </router-link>
       </div>
     </form>
@@ -21,7 +21,7 @@ import ButtonMain from "@/components/ButtonMain.vue";
 export default {
   data() {
     return {
-      username: "",
+      email: "",
       password: "",
     };
   },
@@ -29,31 +29,32 @@ export default {
     ButtonMain,
   },
   methods: {
-    signIn() {
+    handleSignIn() {
       // validate the user's information
-      // and handle the register process
+      // and handle the sign in process
     },
   },
 };
 </script>
 
 <style scoped>
-.register {
-  display: block;
+.signin-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   height: 850px;
 }
 .form {
-  width: 500px;
-  margin: auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 25px;
   margin-bottom: 30px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  width: 400px;
 }
 .label {
-  display: block;
   margin-bottom: 10px;
 }
 .input {

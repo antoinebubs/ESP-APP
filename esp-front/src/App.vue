@@ -1,6 +1,8 @@
 <template>
-  <AppBar />
-  <AppFooter />
+  <div class="flex-container">
+    <AppBar />
+    <AppFooter />
+  </div>
 </template>
 
 <script>
@@ -25,5 +27,10 @@ export default {
 }
 body {
   margin: 0px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #e7e9e8;
 }
 </style>

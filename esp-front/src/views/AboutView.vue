@@ -1,11 +1,11 @@
 <template>
-  <div class="about">
-    <h1>
+  <div class="about-main-container">
+    <div class="title">
       About EpiHealth Virtual Care's VR Platform and How It Supports Mental
       Health Professionals
-    </h1>
-    <div class="flex-container">
-      <div class="text">
+    </div>
+    <div class="content-box">
+      <div class="text-content">
         <p class="about-us">
           The EpiHealth VR Platform is easy to use, fast, and affordable.
         </p>
@@ -20,7 +20,7 @@
           evidence-based care for better mental-health practices, globally.
         </p>
       </div>
-      <img src="@/img/background.jpg" width="950" height="600" />
+      <img class="img" src="@/img/background.jpg" />
     </div>
   </div>
 </template>
@@ -33,42 +33,41 @@ export default {
 };
 </script>
 <style scoped>
-.about {
+.about-main-container {
   font-family: Ubuntu, Noto Sans SC, helvetica, arial, sans-serif;
   color: #13294b;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .about-us {
   font-size: 25px;
-  margin: 0px 0px 20px;
+  margin: 20px;
 }
-.text {
-  margin: 20px 20px 20px 20px;
-}
-.flex-container {
+.text-content {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: left;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.content-box {
+  display: flex;
   background-color: #f9f3ed;
   border-radius: 35px;
   border: none 2px #13294b;
-  margin: 10px 10px 10px 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
-img {
+.img {
   border-radius: 35px;
+  width: 50%;
 }
-h1 {
-  text-align: left;
+.title {
+  margin: 20px;
+  padding: 10px;
   font-size: 45px;
   line-height: 1.2;
   font-weight: 400;
-  width: 50%;
   background-color: #f9f3ed;
   border-radius: 15px;
-  padding: 40px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 </style>

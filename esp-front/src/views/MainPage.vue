@@ -1,12 +1,12 @@
 <template>
   <div class="main-page">
-    <div class="main-page-wapper">
-      <h1>
+    <div class="main-page-content">
+      <h1 class="first-titles">
         Virtual Reality for Mental Health Professionals EpiHealth, an all-in-one
         VR
       </h1>
-      <h3>platform trusted by over 0 therapists.</h3>
-      <div class="flex-container">
+      <h3 class="third-title">platform trusted by over 0 therapists.</h3>
+      <div class="wapper-button">
         <ButtonMain @click="doSomething">Démo</ButtonMain>
         <ButtonMain>Pricing</ButtonMain>
       </div>
@@ -44,23 +44,17 @@ export default {
   width: 100%;
   height: 850px;
 }
+.main-titles {
+}
 p {
   color: #f9f3ed;
 }
 
-h3 {
+.third-title {
   text-align: left;
   margin: 20px;
 }
-.flex-container {
+.wapper-button {
   display: flex;
-}
-.flex-container2 {
-  display: flex;
-  background-color: #008cba;
-  padding: 15px;
-  border-radius: 35px;
-  margin-top: 70px;
-  box-shadow: black 8px 8px;
 }
 </style>
