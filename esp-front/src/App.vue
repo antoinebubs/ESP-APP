@@ -20,10 +20,12 @@ export default {
 </script>
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  background-color: #e7e9e8;
 }
 body {
   margin: 0px;
@@ -31,6 +33,5 @@ body {
 .flex-container {
   display: flex;
   flex-direction: column;
-  background-color: #e7e9e8;
 }
 </style>

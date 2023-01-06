@@ -8,8 +8,8 @@
       <input class="input" type="password" id="password" v-model="password" />
       <div class="buttons">
         <ButtonMain type="submit">Submit</ButtonMain>
-        <router-link to="/signin"
-          ><ButtonMain type="submit"> Sign In</ButtonMain>
+        <router-link to="/signin">
+          <ButtonMain type="submit"> Sign In</ButtonMain>
         </router-link>
       </div>
     </form>
@@ -42,8 +42,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 400;
   height: 850px;
 }
 .form {

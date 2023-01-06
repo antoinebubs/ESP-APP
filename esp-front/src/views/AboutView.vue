@@ -1,8 +1,10 @@
 <template>
   <div class="about-main-container">
-    <div class="title">
-      About EpiHealth Virtual Care's VR Platform and How It Supports Mental
-      Health Professionals
+    <div class="header">
+      <div class="title">
+        <p>About EpiHealth Virtual Care's VR Platform Health Professionals</p>
+        <p>and How It Supports Mental About EpiHealth Virtual</p>
+      </div>
     </div>
     <div class="content-box">
       <div class="text-content">
@@ -22,6 +24,14 @@
       </div>
       <img class="img" src="@/img/background.jpg" />
     </div>
+    <div>
+      <p>
+        The benefits of VR in mental health are supported by 30+ years of
+        evidence and over 1000+ studies. As evidence of the advantages of VR in
+        mental health accumulated, adoption of its use by mental health
+        professionals has steadily grown.
+      </p>
+    </div>
   </div>
 </template>
 <script>
@@ -34,11 +44,13 @@ export default {
 </script>
 <style scoped>
 .about-main-container {
-  font-family: Ubuntu, Noto Sans SC, helvetica, arial, sans-serif;
   color: #13294b;
   display: flex;
   flex-direction: column;
-  height: 850px;
+}
+.header {
+  display: flex;
+  justify-content: center;
 }
 .about-us {
   font-size: 25px;
@@ -63,12 +75,8 @@ export default {
 }
 .title {
   margin: 20px;
-  padding: 10px;
-  font-size: 45px;
+  padding: 20px;
+  font-size: 30px;
   line-height: 1.2;
-  font-weight: 400;
-  background-color: #f9f3ed;
-  border-radius: 15px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 </style>

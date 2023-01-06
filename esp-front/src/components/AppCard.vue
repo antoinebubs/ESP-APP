@@ -1,10 +1,9 @@
 <template>
-  <div class="card">
-    <img src="@/img/headset.jpg" alt="John" style="width: 100%" />
-    <h1>John Doe</h1>
-    <p class="title">CEO & Founder, Example</p>
-    <p>Harvard University</p>
-    <ButtonMain @click="doSomething">Démo</ButtonMain>
+  <div class="news-cards">
+    <img class="news-img" src="@/img/headsetvive.jpg" style="width: 100%" />
+    <div class="title-news">John Doe</div>
+    <p class="news-body">Harvard University</p>
+    <ButtonMain @click="doSomething">See more</ButtonMain>
   </div>
 </template>
   
@@ -15,31 +14,29 @@ export default {
     ButtonMain,
   },
   data() {
-    return {
-      img: "../img/headset.jpg",
-    };
+    return {};
   },
 };
 </script>
   
   <style scoped>
-.card {
+.news-cards {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: auto;
   text-align: center;
-  font-family: arial;
   border: none 1px;
   border-radius: 35px;
-  max-width: 400px;
+  max-width: 300px;
   min-width: 200px;
+  background-color: #f9f3ed;
 }
 
-.title {
+.title-news {
   color: grey;
   font-size: 18px;
 }
 
-img {
+.news-img {
   border-radius: 35px;
 }
 </style>

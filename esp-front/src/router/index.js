@@ -3,6 +3,7 @@ import MainPage from "../views/MainPage.vue";
 import NewsView from "../views/NewsView.vue";
 import RegisterPage from "@/views/RegisterPage.vue";
 import SignIn from "@/views/SignIn.vue";
+import TestParallax from "@/views/TestParallax.vue"
 
 const routes = [
   { path: "/", redirect: "/home" },
@@ -25,6 +26,11 @@ const routes = [
     path: "/signin",
     name: "signin",
     component: SignIn,
+  },
+  {
+    path: "/copyright",
+    name: "copyright",
+    component: TestParallax,
   },
   {
     path: "/about",

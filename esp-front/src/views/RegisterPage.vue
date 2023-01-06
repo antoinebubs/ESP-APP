@@ -2,16 +2,36 @@
   <div class="register-main-container">
     <h1>Register</h1>
     <form @submit="handleRegister" class="form">
-      <label class="label" for="username">Username:</label>
-      <input class="input" type="text" id="username" v-model="username" />
-      <label class="label" for="email">Email:</label>
-      <input class="input" type="email" id="email" v-model="email" />
-      <label class="label" for="password">Password:</label>
-      <input class="input" type="password" id="password" v-model="password" />
+      <label class="label" placeholder="Username" for="username">
+        Username
+      </label>
+      <input
+        class="input"
+        type="text"
+        id="username"
+        v-model="username"
+        placeholder="Username"
+      />
+      <label class="label" for="email">Email</label>
+      <input
+        class="input"
+        type="email"
+        id="email"
+        v-model="email"
+        placeholder="email"
+      />
+      <label class="label" for="password">Password</label>
+      <input
+        class="input"
+        type="password"
+        id="password"
+        v-model="password"
+        placeholder="password"
+      />
       <div class="buttons">
         <ButtonMain type="submit">Submit</ButtonMain>
-        <router-link to="/signin"
-          ><ButtonMain type="submit"> Sign In</ButtonMain>
+        <router-link to="/signin">
+          <ButtonMain type="submit"> Sign In</ButtonMain>
         </router-link>
       </div>
     </form>
@@ -45,26 +65,27 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 400;
-  height: 850px;
+  width: 100%;
 }
 .form {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   border: 1px solid #ccc;
+  font-size: 25px;
   border-radius: 25px;
-  margin-bottom: 30px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 .label {
-  margin-bottom: 10px;
+  display: none;
 }
 .input {
-  width: 100%;
-  padding: 8px;
+  padding: 10px;
   border: 1px solid #ccc;
   box-sizing: border-box;
   border-radius: 25px;
+  margin: 10px;
+  font-size: 20px;
 }
 .buttons {
   margin-top: 30px;
