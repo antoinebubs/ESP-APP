@@ -37,6 +37,8 @@ export default {
   justify-content: center;
   width: 100%;
   font-weight: bold;
+  position: fixed;
+  bottom: 0;
 }
 .list-options {
   list-style-type: none;

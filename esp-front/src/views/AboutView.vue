@@ -38,6 +38,7 @@ export default {
   color: #13294b;
   display: flex;
   flex-direction: column;
+  height: 850px;
 }
 .about-us {
   font-size: 25px;
